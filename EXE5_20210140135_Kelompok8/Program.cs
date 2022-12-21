@@ -17,4 +17,14 @@ namespace EXE5_20210140135_Kelompok8
             next = null;
         }
     }
+
+    internal class QueueLinkList
+    {
+        Node dimas, damar;
+        public QueueLinkList()
+        {
+            this.dimas = this.damar = null;
+        }
+        
+    }
 }
