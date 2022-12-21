@@ -23,7 +23,7 @@ namespace EXE5_20210140135_Kelompok8
         Node dimas, damar;
         public QueueLinkList()
         {
-            this.dimas = this.damar = null;
+            dimas = damar = null;
         }
 
         void Insert(int item)
