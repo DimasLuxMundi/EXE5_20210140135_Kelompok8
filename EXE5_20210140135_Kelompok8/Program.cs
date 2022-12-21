@@ -41,8 +41,20 @@ namespace EXE5_20210140135_Kelompok8
             }
             Console.WriteLine("{0} inserted into Queue", item);
         }
-        
-        
-        
+        void Delete()
+        {
+            if (this.dimas == null)
+            {
+                Console.WriteLine("The Queue is empty");
+                return;
+            }
+
+            Node current = this.dimas;
+            this.dimas = this.dimas.next;
+
+            Console.WriteLine("Item deleted is {0}", current.data);
+        }
+
+
     }
 }
