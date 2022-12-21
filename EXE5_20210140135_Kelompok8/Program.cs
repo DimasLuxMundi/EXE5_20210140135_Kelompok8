@@ -30,14 +30,14 @@ namespace EXE5_20210140135_Kelompok8
         {
             Node newNode = new Node(item);
 
-            if(this.damar == null)
+            if(damar == null)
             {
-                this.dimas = this.damar = newNode;
+                dimas = damar = newNode;
             }
             else
             {
-                this.damar.next = newNode;
-                this.damar = newNode;
+                damar.next = newNode;
+                damar = newNode;
             }
             Console.WriteLine("{0} inserted into Queue", item);
         }
