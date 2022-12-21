@@ -8,10 +8,10 @@ namespace EXE5_20210140135_Kelompok8
 {
     internal class Node
     {
-        internal int data;
+        internal string data;
         internal Node next;
 
-        public Node(int d)
+        public Node(string d)
         {
             data = d;
             next = null;
@@ -26,7 +26,7 @@ namespace EXE5_20210140135_Kelompok8
             dimas = damar = null;
         }
 
-        void Insert(int item)
+        void Insert(string item)
         {
             Node newNode = new Node(item);
 
@@ -84,7 +84,7 @@ namespace EXE5_20210140135_Kelompok8
                     Console.WriteLine("Menu");
                     Console.WriteLine("1. Implement insert operation");
                     Console.WriteLine("2. Implement delete operation");
-                    Console.WriteLine("3. Display values");
+                    Console.WriteLine("3. Display data");
                     Console.WriteLine("4. Exit");
                     Console.Write("\nEnter your choice (1-4): ");
                     ch = Convert.ToChar(Console.ReadLine());
@@ -93,8 +93,8 @@ namespace EXE5_20210140135_Kelompok8
                     {
                         case '1':
                             {
-                                Console.Write("Enter a number: ");
-                                int item = Convert.ToInt32(System.Console.ReadLine());
+                                Console.Write("Enter a data: ");
+                                string item = Console.ReadLine();
                                 Console.WriteLine();
                                 myQueue.Insert(item);
                             }
@@ -124,7 +124,7 @@ namespace EXE5_20210140135_Kelompok8
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Check for the values entered.");
+                    Console.WriteLine("Check for the data entered.");
                 }
             }
         }
