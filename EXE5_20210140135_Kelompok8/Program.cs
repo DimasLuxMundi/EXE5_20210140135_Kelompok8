@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace EXE5_20210140135_Kelompok8
 {
-    internal class Program
+    internal class Node
     {
-        static void Main(string[] args)
+        internal int data;
+        internal Node next;
+
+        public Node(int d)
         {
+            data = d;
+            next = null;
         }
     }
 }
