@@ -25,6 +25,24 @@ namespace EXE5_20210140135_Kelompok8
         {
             this.dimas = this.damar = null;
         }
+
+        void Insert(int item)
+        {
+            Node newNode = new Node(item);
+
+            if(this.damar == null)
+            {
+                this.dimas = this.damar = newNode;
+            }
+            else
+            {
+                this.damar.next = newNode;
+                this.damar = newNode;
+            }
+            Console.WriteLine("{0} inserted into Queue", item);
+        }
+        
+        
         
     }
 }
