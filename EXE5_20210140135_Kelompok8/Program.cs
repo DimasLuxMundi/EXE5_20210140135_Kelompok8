@@ -55,6 +55,23 @@ namespace EXE5_20210140135_Kelompok8
             Console.WriteLine("Item deleted is {0}", current.data);
         }
 
+        void Display()
+        {
+            if(this.dimas == null)
+            {
+                Console.WriteLine("The Queue is empty");
+                return;
+            }
+
+            Node current = dimas;
+            while(current != null)
+            {
+                Console.Write(current.data + " ");
+                current = current.next;
+            }
+            Console.WriteLine();
+        }
+
 
     }
 }
