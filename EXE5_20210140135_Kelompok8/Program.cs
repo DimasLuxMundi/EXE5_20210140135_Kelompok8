@@ -72,6 +72,63 @@ namespace EXE5_20210140135_Kelompok8
             Console.WriteLine();
         }
 
+        static void Main(string[] args)
+        {
+            QueueLinkList myQueue = new QueueLinkList();
+            char ch;
+
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Implement insert operation");
+                    Console.WriteLine("2. Implement delete operation");
+                    Console.WriteLine("3. Display values");
+                    Console.WriteLine("4. Exit");
+                    Console.Write("\nEnter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                Console.Write("Enter a number: ");
+                                int item = Convert.ToInt32(System.Console.ReadLine());
+                                Console.WriteLine();
+                                myQueue.Insert(item);
+                            }
+                            break;
+                        case '2':
+                            {
+                                myQueue.Delete();
+                            }
+                            break;
+                        case '3':
+                            {
+                                myQueue.Display();
+                            }
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid option!!");
+                            }
+                            break;
+
+
+                    }
+
+
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the values entered.");
+                }
+            }
+        }
+
 
     }
 }
