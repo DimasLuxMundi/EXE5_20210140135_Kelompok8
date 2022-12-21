@@ -57,7 +57,7 @@ namespace EXE5_20210140135_Kelompok8
 
         void Display()
         {
-            if(this.dimas == null)
+            if(dimas == null)
             {
                 Console.WriteLine("The Queue is empty");
                 return;
